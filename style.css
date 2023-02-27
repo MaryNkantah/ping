@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    width: 40%;
+}
+
+.contentsecond {
+    width: 100%;
+    align-items: center;
+}
+
+.content h4 {
+    color: hsl(0, 0%, 59%);
+    font-size: 41px;
+    font-weight: 300;
+    margin: 21px 0;
+}
+
+.content p {
+    margin: 27px 0;
+    font-size: 21px;
+    color: hsl(209, 33%, 12%);
+}
+
+span {
+    color: black;
+}
+
+button {
+    padding: 8px 61px;
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 37px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+
+button:hover {
+    border: 1px solid hsl(223, 87%, 63%);
+    background-color: white;
+    color: hsl(223, 87%, 63%);
+}
+
+#placeholder {
+    font-size: 17px;
+    text-align: start;
+}
+
+form {
+    margin-bottom: 31px;
+}
+
+input {
+    padding: 9px 77px 9px;
+    text-align: start;
+    border-radius: 37px;
+    border: none;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 59%);
+}
+
+.image img {
+    width: 77%;
+    margin-bottom: 21px;
+}
+
+#copyright {
+    color: hsl(0, 0%, 59%);
+}
+
+#Logo {
+    margin-bottom: 37px;
+}
+
+.icons {
+    margin: 41px 0;
+}
+
+.icons i {
+    padding: 7px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 51px;
+    color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    margin: 2px;
+}
+
+.icons i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .content {
+        width: 71%;
+    }
+    .content h4{
+        font-size: 41px;
+    }
+    .content p{
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .content {
+        width: 77%;
+    }
+
+    .image img {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content {
+        width: 87%;
+    }
+    .form{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:578px) {
+    .content h4{
+        font-size: 31px;
+        margin: 17px 0;
+    }
+     
+    .content p{
+        margin: 21px 0;
+        font-size: 17px;
+    }
+    
+    button{
+        padding: 8px 77px;
+    }
+}
